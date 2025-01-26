@@ -1,0 +1,21 @@
+name: MobCustom
+version: '${project.version}'
+main: etb_custom_mob.CustomMobLoader
+api-version: '1.21'
+softdepend: [Multiverse-Core]
+
+commands:
+  spawncompanion:
+    description: Fait apparaître un compagnon personnalisé
+    usage: /spawncompanion <mobId>
+    permission: custommob.spawn
+
+permissions:
+  custommob.spawn:
+    description: Permet d'utiliser la commande /spawncompanion
+    default: op
+  custommob.spawn.*:
+    description: Permet de faire apparaître n'importe quel type de compagnon
+    default: op
+    children:
+      custommob.spawn: true
