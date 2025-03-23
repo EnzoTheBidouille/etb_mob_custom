@@ -5,7 +5,7 @@ api-version: '1.21'
 softdepend: [Multiverse-Core]
 
 commands:
-  spawncompanion:
+  pet:
     description: Fait apparaître un compagnon personnalisé
     usage: /pet <mobId>
     permission: custommob.spawn

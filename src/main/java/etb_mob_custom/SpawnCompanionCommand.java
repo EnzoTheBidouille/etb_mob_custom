@@ -28,7 +28,7 @@ public class SpawnCompanionCommand implements CommandExecutor, TabCompleter {
 
         // Vérifier si l'ID du compagnon est spécifié
         if (args.length < 1) {
-            sender.sendMessage("§cUtilisation: /spawncompanion <mobId>");
+            sender.sendMessage("§cUtilisation: /pet <mobId>");
             return true;
         }
 
