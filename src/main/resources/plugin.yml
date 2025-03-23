@@ -1,6 +1,6 @@
 name: MobCustom
-version: '${project.version}'
-main: etb_custom_mob.CustomMobLoader
+version: '0.1'
+main: etb_mob_custom.CustomMobLoader
 api-version: '1.21'
 softdepend: [Multiverse-Core]
 
