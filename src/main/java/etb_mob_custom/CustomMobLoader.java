@@ -36,7 +36,7 @@ public class CustomMobLoader extends JavaPlugin implements Listener {
         storageManager = new CompanionStorageManager(this);
         storageManager.loadCompanions();
         
-        getCommand("spawncompanion").setExecutor(new SpawnCompanionCommand(this));
+        getCommand("pet").setExecutor(new SpawnCompanionCommand(this));
         getServer().getPluginManager().registerEvents(this, this);
         getServer().getPluginManager().registerEvents(new CompanionTeleportListener(this), this);
         getServer().getPluginManager().registerEvents(new PlayerQuitListener(this, storageManager), this); // Ajout du nouveau listener

@@ -7,12 +7,12 @@ softdepend: [Multiverse-Core]
 commands:
   spawncompanion:
     description: Fait apparaître un compagnon personnalisé
-    usage: /spawncompanion <mobId>
+    usage: /pet <mobId>
     permission: custommob.spawn
 
 permissions:
   custommob.spawn:
-    description: Permet d'utiliser la commande /spawncompanion
+    description: Permet d'utiliser la commande /pet
     default: op
   custommob.spawn.*:
     description: Permet de faire apparaître n'importe quel type de compagnon
